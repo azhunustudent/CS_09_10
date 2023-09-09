@@ -60,7 +60,7 @@ namespace CS_09_10
         }
 
 
-        // Перегрузка метода Equals для сравнения объектов класса Shop
+        // Перегрузка метода Equals
         public override bool Equals(object obj)
         {
             if (obj == null)
@@ -71,7 +71,7 @@ namespace CS_09_10
             return this.S.Equals(temp.S);
         }
 
-        // Переопределение GetHashCode для поддержки перегруженного Equals
+        // Переопределение GetHashCode для Equals
         public override int GetHashCode()
         {
             return S.GetHashCode();
